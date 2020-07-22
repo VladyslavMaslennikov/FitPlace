@@ -17,6 +17,8 @@
 		877BB56424C8D53E00BA12D2 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 877BB56324C8D53E00BA12D2 /* Montserrat-Thin.ttf */; };
 		877BB56624C8D7A200BA12D2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56524C8D7A200BA12D2 /* Fonts.swift */; };
 		877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56824C8DCFA00BA12D2 /* VideoLibraryViewController.swift */; };
+		877BB56C24C8E10000BA12D2 /* VideoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */; };
+		877BB56D24C8E10000BA12D2 /* VideoLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */; };
 		87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3224C72F3B00132173 /* AppDelegate.swift */; };
 		87F5AE3524C72F3B00132173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3424C72F3B00132173 /* SceneDelegate.swift */; };
 		87F5AE3A24C72F3B00132173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F5AE3824C72F3B00132173 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		877BB56324C8D53E00BA12D2 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		877BB56524C8D7A200BA12D2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		877BB56824C8DCFA00BA12D2 /* VideoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibraryViewController.swift; sourceTree = "<group>"; };
+		877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibraryCell.swift; sourceTree = "<group>"; };
+		877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoLibraryCell.xib; sourceTree = "<group>"; };
 		87F5AE2F24C72F3B00132173 /* FitPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F5AE3224C72F3B00132173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F5AE3424C72F3B00132173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				877BB56824C8DCFA00BA12D2 /* VideoLibraryViewController.swift */,
+				877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */,
+				877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */,
 			);
 			path = "Video Library";
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 			files = (
 				877BB56424C8D53E00BA12D2 /* Montserrat-Thin.ttf in Resources */,
 				877BB56024C8D52E00BA12D2 /* Montserrat-Regular.ttf in Resources */,
+				877BB56D24C8E10000BA12D2 /* VideoLibraryCell.xib in Resources */,
 				877BB55C24C8D51F00BA12D2 /* Montserrat-Light.ttf in Resources */,
 				877BB55A24C8D51300BA12D2 /* Montserrat-Bold.ttf in Resources */,
 				87F5AE3F24C72F3D00132173 /* LaunchScreen.storyboard in Resources */,
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */,
+				877BB56C24C8E10000BA12D2 /* VideoLibraryCell.swift in Sources */,
 				877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */,
 				877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */,
 				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,

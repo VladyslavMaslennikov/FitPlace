@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8aN-lP-1Xf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qZM-9O-dtg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -499,23 +499,79 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="67.633928571428569"/>
         </scene>
-        <!--Video Library View Controller-->
+        <!--Видеобиблиотека-->
         <scene sceneID="nK5-tV-oWo">
             <objects>
                 <viewController id="8aN-lP-1Xf" customClass="VideoLibraryViewController" customModule="FitPlace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PyG-8E-PAr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4SP-jr-wmN">
+                                <rect key="frame" x="5" y="93" width="404" height="769"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="01p-zc-vIl">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n9R-4d-K5E" customClass="VideoLibraryCell" customModule="FitPlace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZB1-4V-odF">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P2Z-eO-lsa" firstAttribute="bottom" secondItem="4SP-jr-wmN" secondAttribute="bottom" id="0PK-mi-zon"/>
+                            <constraint firstItem="4SP-jr-wmN" firstAttribute="centerX" secondItem="PyG-8E-PAr" secondAttribute="centerX" id="0Xt-Up-HQZ"/>
+                            <constraint firstItem="4SP-jr-wmN" firstAttribute="leading" secondItem="P2Z-eO-lsa" secondAttribute="leading" constant="5" id="1sz-Lx-t3u"/>
+                            <constraint firstItem="4SP-jr-wmN" firstAttribute="top" secondItem="P2Z-eO-lsa" secondAttribute="top" constant="5" id="tfx-5o-dis"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="P2Z-eO-lsa"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Видеобиблиотека" id="QeL-l3-1Sg">
+                        <leftBarButtonItems>
+                            <barButtonItem style="plain" id="xfu-Qh-Q9N"/>
+                            <barButtonItem image="back_arrow" id="WQo-DF-MBF"/>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="4SP-jr-wmN" id="ibV-JU-jjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5Q-vW-Now" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-167"/>
+            <point key="canvasLocation" x="1892.753623188406" y="-167.41071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R9j-Xw-zP8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qZM-9O-dtg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BMU-s5-KWz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8aN-lP-1Xf" kind="relationship" relationship="rootViewController" id="r8d-wH-g3G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohd-bN-6X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="-167.41071428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back_arrow" width="12" height="24"/>
         <image name="fitplace_logo" width="250" height="86"/>
         <image name="section1" width="1164" height="652"/>
         <image name="section2" width="1164" height="652"/>

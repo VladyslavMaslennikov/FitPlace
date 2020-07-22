@@ -24,8 +24,8 @@ class VerifyViewController: UIViewController {
     }
     
     private func setupUI() {
-        Shadow.apply(view: cancelShadowView, radius: 25)
-        Shadow.apply(view: okShadowView, radius: 25)
+        Shadow.apply(view: cancelShadowView, radius: 25, alpha: 0.2)
+        Shadow.apply(view: okShadowView, radius: 25, alpha: 0.2)
     }
 
 }
