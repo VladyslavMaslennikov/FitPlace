@@ -91,7 +91,10 @@ extension MainUserViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: headerBackgroundView.frame.width / 2.9, height: headerBackgroundView.frame.height - 20)
+        let widthForPros = headerBackgroundView.frame.width / 2.4
+        let widthForBasic = headerBackgroundView.frame.width / 3
+        let screenWidth = UIScreen.main.bounds.width
+        return CGSize(width: screenWidth >= 414 ? widthForPros : widthForBasic, height: headerBackgroundView.frame.height - 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

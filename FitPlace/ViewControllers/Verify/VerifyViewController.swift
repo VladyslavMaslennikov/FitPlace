@@ -24,18 +24,8 @@ class VerifyViewController: UIViewController {
     }
     
     private func setupUI() {
-        let font = UIFont(name: "Futura", size: 13)
-        let alignment: NSTextAlignment = .center
-        let plainTextAttributes: [NSAttributedString.Key: Any] = [
-            NSAttributedString.Key.font: font as Any
-        ]
-        let plainText = NSAttributedString(string: "Введите код подтверждения из сообщения, отправленного на указанный вами номер телефона. Доставка сообщения может занять минуту или более", attributes: plainTextAttributes)
-        informTextView.attributedText = plainText
-        informTextView.textAlignment = alignment
-        
         Shadow.apply(view: cancelShadowView, radius: 25)
         Shadow.apply(view: okShadowView, radius: 25)
-        
     }
 
 }

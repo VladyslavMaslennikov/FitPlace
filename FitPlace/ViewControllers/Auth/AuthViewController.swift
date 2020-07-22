@@ -16,17 +16,15 @@ class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//Авторизуясь, вы соглашаетесь с политикой конфиденциальности, договором оферты и условиями использования
-    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setupUI()
     }
     
-
     private func setupUI() {
-        let font = UIFont(name: "Futura", size: 13)
+        let font = UIFont(name: Montserrat(.regular).font, size: 14)
         let alignment: NSTextAlignment = .center
         let plainTextAttributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: font as Any

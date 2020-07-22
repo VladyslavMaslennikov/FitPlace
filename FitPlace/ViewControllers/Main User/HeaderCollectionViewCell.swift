@@ -21,6 +21,8 @@ class HeaderCollectionViewCell: UICollectionViewCell {
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 15
+        let screenWidth = UIScreen.main.bounds.width
+        titleLabel.font = UIFont(name: Montserrat(.bold).font, size: screenWidth >= 414 ? 15 : 12)
     }
     
     override func layoutSubviews() {
