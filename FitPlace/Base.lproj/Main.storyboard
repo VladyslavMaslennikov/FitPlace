@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IJb-P4-VBU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,6 +8,136 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="0a0-aP-lWc">
+            <objects>
+                <viewController id="IJb-P4-VBU" customClass="AuthViewController" customModule="FitPlace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDY-SZ-fOr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0M-2g-1pF">
+                                <rect key="frame" x="100" y="64" width="214" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fitplace_logo" translatesAutoresizingMaskIntoConstraints="NO" id="081-xT-dCM">
+                                        <rect key="frame" x="32" y="25.5" width="150" height="77"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="081-xT-dCM" firstAttribute="height" secondItem="n0M-2g-1pF" secondAttribute="height" multiplier="0.6" id="AXs-jo-XQq"/>
+                                    <constraint firstAttribute="height" constant="128" id="ZrT-Xr-XdM"/>
+                                    <constraint firstItem="081-xT-dCM" firstAttribute="centerX" secondItem="n0M-2g-1pF" secondAttribute="centerX" id="cIU-zy-hFg"/>
+                                    <constraint firstItem="081-xT-dCM" firstAttribute="width" secondItem="n0M-2g-1pF" secondAttribute="width" multiplier="0.7" id="gVN-zc-tbv"/>
+                                    <constraint firstItem="081-xT-dCM" firstAttribute="centerY" secondItem="n0M-2g-1pF" secondAttribute="centerY" id="mA8-0G-I2R"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZo-kh-YB0">
+                                <rect key="frame" x="30" y="202" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9or-EK-gFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5Z-i5-abm">
+                                <rect key="frame" x="30" y="242" width="354" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ga9-8o-0PW"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Авторизуясь, вы соглашаетесь с политикой конфиденциальности, договором оферты и условиями использования" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uCz-h3-WeM">
+                                <rect key="frame" x="50" y="264" width="314" height="107.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-hB-blZ" userLabel="shadowView">
+                                <rect key="frame" x="20" y="401.5" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzc-AU-kuz">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.96954255705544834" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Авторизироваться">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="zzc-AU-kuz" firstAttribute="leading" secondItem="ge0-hB-blZ" secondAttribute="leading" id="B7o-sT-TPe"/>
+                                    <constraint firstItem="zzc-AU-kuz" firstAttribute="centerX" secondItem="ge0-hB-blZ" secondAttribute="centerX" id="U14-RM-L9U"/>
+                                    <constraint firstItem="zzc-AU-kuz" firstAttribute="top" secondItem="ge0-hB-blZ" secondAttribute="top" id="U1P-ey-4PW"/>
+                                    <constraint firstItem="zzc-AU-kuz" firstAttribute="centerY" secondItem="ge0-hB-blZ" secondAttribute="centerY" id="hOB-5v-ZFM"/>
+                                    <constraint firstAttribute="height" constant="60" id="vEy-7A-3tt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-B4-Qen">
+                                <rect key="frame" x="80" y="481.5" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uZb-2c-29Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <state key="normal" title="Восстановить">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfi-tQ-LRy">
+                                <rect key="frame" x="80" y="531.5" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mdr-ff-ujY"/>
+                                </constraints>
+                                <state key="normal" title="Хочу стать тренером">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xfi-tQ-LRy" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="0Fj-MG-Q6Z"/>
+                            <constraint firstItem="n0M-2g-1pF" firstAttribute="top" secondItem="oO5-li-Dja" secondAttribute="top" constant="20" id="3jj-jM-rWc"/>
+                            <constraint firstItem="E5Z-i5-abm" firstAttribute="top" secondItem="lZo-kh-YB0" secondAttribute="bottom" id="Blg-Po-rPR"/>
+                            <constraint firstItem="lZo-kh-YB0" firstAttribute="top" secondItem="n0M-2g-1pF" secondAttribute="bottom" constant="10" id="BrE-1d-c2A"/>
+                            <constraint firstItem="uCz-h3-WeM" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="50" id="EfL-1p-yUR"/>
+                            <constraint firstItem="E5Z-i5-abm" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="FXZ-8Y-P5t"/>
+                            <constraint firstItem="uCz-h3-WeM" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="LkR-XW-hHo"/>
+                            <constraint firstItem="lZo-kh-YB0" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="30" id="LsB-fU-1v8"/>
+                            <constraint firstItem="lZo-kh-YB0" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="PHV-en-e45"/>
+                            <constraint firstItem="uCz-h3-WeM" firstAttribute="height" secondItem="aDY-SZ-fOr" secondAttribute="height" multiplier="0.12" id="TsB-a9-HiG"/>
+                            <constraint firstItem="ge0-hB-blZ" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="20" id="Uz0-lk-QX4"/>
+                            <constraint firstItem="LeR-B4-Qen" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="Va5-qa-5nc"/>
+                            <constraint firstItem="n0M-2g-1pF" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="100" id="W3Y-3z-pta"/>
+                            <constraint firstItem="uCz-h3-WeM" firstAttribute="top" secondItem="E5Z-i5-abm" secondAttribute="bottom" constant="20" id="Wlw-uJ-vRY"/>
+                            <constraint firstItem="ge0-hB-blZ" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="eds-qq-Mjd"/>
+                            <constraint firstItem="n0M-2g-1pF" firstAttribute="centerX" secondItem="aDY-SZ-fOr" secondAttribute="centerX" id="eqf-rk-irH"/>
+                            <constraint firstItem="LeR-B4-Qen" firstAttribute="top" secondItem="ge0-hB-blZ" secondAttribute="bottom" constant="20" id="h4Y-i9-94F"/>
+                            <constraint firstItem="xfi-tQ-LRy" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="80" id="jsq-63-HtM"/>
+                            <constraint firstItem="ge0-hB-blZ" firstAttribute="top" secondItem="uCz-h3-WeM" secondAttribute="bottom" constant="30" id="ofK-MB-I0H"/>
+                            <constraint firstItem="E5Z-i5-abm" firstAttribute="width" secondItem="lZo-kh-YB0" secondAttribute="width" id="rA5-hW-89M"/>
+                            <constraint firstItem="LeR-B4-Qen" firstAttribute="leading" secondItem="oO5-li-Dja" secondAttribute="leading" constant="80" id="wmn-ba-iem"/>
+                            <constraint firstItem="xfi-tQ-LRy" firstAttribute="top" secondItem="LeR-B4-Qen" secondAttribute="bottom" constant="20" id="zIM-C2-tb0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oO5-li-Dja"/>
+                    </view>
+                    <connections>
+                        <outlet property="informTextView" destination="uCz-h3-WeM" id="8X6-8M-uAy"/>
+                        <outlet property="separatorLine" destination="E5Z-i5-abm" id="sDP-lb-eWq"/>
+                        <outlet property="shadowView" destination="ge0-hB-blZ" id="d35-JK-PNx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elX-wN-aDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="-1031.25"/>
+        </scene>
         <!--Main User View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -210,6 +340,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fitplace_logo" width="250" height="86"/>
         <image name="section1" width="1164" height="652"/>
         <image name="section2" width="1164" height="652"/>
         <image name="section3" width="1164" height="652"/>
