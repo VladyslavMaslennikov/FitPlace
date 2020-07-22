@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55424C883B400BA12D2 /* VerifyViewController.swift */; };
+		877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55624C888DA00BA12D2 /* Shadows.swift */; };
 		87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3224C72F3B00132173 /* AppDelegate.swift */; };
 		87F5AE3524C72F3B00132173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3424C72F3B00132173 /* SceneDelegate.swift */; };
 		87F5AE3A24C72F3B00132173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F5AE3824C72F3B00132173 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		877BB55424C883B400BA12D2 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		877BB55624C888DA00BA12D2 /* Shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadows.swift; sourceTree = "<group>"; };
 		87F5AE2F24C72F3B00132173 /* FitPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F5AE3224C72F3B00132173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F5AE3424C72F3B00132173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		8753049824C8701F009D80F1 /* Verify */ = {
 			isa = PBXGroup;
 			children = (
+				877BB55424C883B400BA12D2 /* VerifyViewController.swift */,
 			);
 			path = Verify;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				87F5AE4D24C735D400132173 /* Theme.swift */,
+				877BB55624C888DA00BA12D2 /* Shadows.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */,
+				877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */,
+				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,
 				87F5AE4E24C735D400132173 /* Theme.swift in Sources */,
 				87F5AE4724C7305D00132173 /* CGFloatExtension.swift in Sources */,
 				87F5AE5724C7990000132173 /* HeaderCollectionViewCell.swift in Sources */,
