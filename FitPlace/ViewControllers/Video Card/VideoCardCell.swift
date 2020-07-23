@@ -22,7 +22,6 @@ class VideoCardCell: UICollectionViewCell {
         layer.masksToBounds = false
         cellBackgroundView.layer.masksToBounds = true
         cellBackgroundView.layer.cornerRadius = 15
-//        imageView.layer.masksToBounds = true
     }
 
     override func layoutSubviews() {

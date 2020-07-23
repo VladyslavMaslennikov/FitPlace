@@ -16,7 +16,7 @@ class VideoCardViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     private let cellId = "VideoCardCell"
-    private let videoCards: [(image: String, title: String, description: String, price: String)] = [("video_card1", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "11 мин.".uppercased()), ("video_card2", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "18 мин.".uppercased()), ("video_card3", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "15 мин.".uppercased())]
+    private let videoCards: [(image: String, title: String, description: String, time: String)] = [("video_card1", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "11 мин.".uppercased()), ("video_card2", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "18 мин.".uppercased()), ("video_card3", "power training".uppercased(), "Занятие с элементами силового тренинга, направленное на развитие основных мышечных групп".uppercased(), "15 мин.".uppercased())]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +46,16 @@ class VideoCardViewController: UIViewController {
 extension VideoCardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return videoCards.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! VideoCardCell
-        let index = indexPath.row
-        //TODO: 
+        let card = videoCards[indexPath.row]
+        cell.imageView.image = UIImage(named: card.image)
+        cell.titleLabel.text = card.title
+        cell.descriptionTextView.text = card.description
+        cell.timeTitleLabel.text = card.time
         return cell
     }
 
@@ -68,9 +71,10 @@ extension VideoCardViewController: UICollectionViewDelegate, UICollectionViewDat
         collectionView.backgroundColor = .clear
         collectionView.showsVerticalScrollIndicator = false
         collectionView.layer.masksToBounds = true
-//        scrollView.delegate = self
+        scrollView.delegate = self
         scrollView.decelerationRate = .fast
         scrollView.showsVerticalScrollIndicator = false
+        scrollView.bounces = false
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
