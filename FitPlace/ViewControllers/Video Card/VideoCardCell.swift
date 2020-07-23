@@ -22,10 +22,10 @@ class VideoCardCell: UICollectionViewCell {
         layer.masksToBounds = false
         cellBackgroundView.layer.masksToBounds = true
         cellBackgroundView.layer.cornerRadius = 15
-        imageView.layer.masksToBounds = true
+//        imageView.layer.masksToBounds = true
     }
 
     override func layoutSubviews() {
-        Shadow.shadowToView(view: shadowView, radiusForPath: 15, shadowRadius: 5, alpha: 0.5)
+        Shadow.shadowToView(view: self, radiusForPath: 15, shadowRadius: 2, alpha: 0.4)
     }
 }
