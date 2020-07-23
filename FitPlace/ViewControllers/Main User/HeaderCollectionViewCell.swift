@@ -18,6 +18,7 @@ class HeaderCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        layer.masksToBounds = false
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 15
@@ -26,18 +27,7 @@ class HeaderCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        contentView.layer.cornerRadius = 6.0
-        contentView.layer.borderWidth = 1.0
-        contentView.layer.borderColor = UIColor.clear.cgColor
-        contentView.layer.masksToBounds = true
-        
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: -1.0, height: 1.0)
-        layer.shadowRadius = 5
-        layer.shadowOpacity = 0.15
-        layer.masksToBounds = false
-        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
-        layer.backgroundColor = UIColor.clear.cgColor
+        Shadow.shadowToView(view: self, radiusForPath: 15, shadowRadius: 2, alpha: 0.4)
     }
 
 }

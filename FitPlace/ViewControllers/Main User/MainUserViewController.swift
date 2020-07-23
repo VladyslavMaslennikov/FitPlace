@@ -27,37 +27,22 @@ class MainUserViewController: UIViewController {
     //MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        stackView.layer.masksToBounds = false
+        view.backgroundColor = .backgroundThemeColor
+        
         setUpHeaderCollectionView()
         setupScrollView()
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        setupUI()
-    }
-    
-    //MARK: - UI Setup
-    private func setupUI() {
-        stackView.layer.masksToBounds = false
-        view.backgroundColor = .backgroundThemeColor
-        applyShadowToLayer(view: sectionOne)
-        applyShadowToLayer(view: sectionTwo)
-        applyShadowToLayer(view: sectionThree)
-        applyShadowToLayer(view: sectionFour)
-        applyShadowToLayer(view: sectionFive)
-    }
-   
-    private func applyShadowToLayer(view: UIView) {
-        let layer = view.layer
-        layer.masksToBounds = false
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        layer.shadowRadius = 15
-        layer.shadowOpacity = 0.5
-        let rect = CGRect(x: 5, y: 5, width: view.bounds.width - 40, height: view.bounds.height - 10)
-        layer.shadowPath = UIBezierPath(roundedRect: rect, cornerRadius: 5).cgPath
-    }
 
+    override func viewDidLayoutSubviews() {
+        Shadow.shadowToView(view: sectionOne, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+        Shadow.shadowToView(view: sectionTwo, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+        Shadow.shadowToView(view: sectionThree, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+        Shadow.shadowToView(view: sectionFour, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+        Shadow.shadowToView(view: sectionFive, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+    }
 }
 
 //MARK: - Collection View Setup + Scroll View
@@ -84,6 +69,7 @@ extension MainUserViewController: UICollectionViewDelegate, UICollectionViewData
         headerCollectionView.isScrollEnabled = true
         headerCollectionView.backgroundColor = .clear
         headerCollectionView.showsHorizontalScrollIndicator = false
+        headerCollectionView.layer.masksToBounds = false
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

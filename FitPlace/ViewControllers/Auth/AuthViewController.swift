@@ -41,7 +41,10 @@ class AuthViewController: UIViewController {
         informTextView.attributedText = compoundString
         informTextView.textAlignment = alignment
         
-        Shadow.apply(view: shadowView, radius: 25, alpha: 0.2)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        Shadow.shadowToView(view: shadowView, radiusForPath: 25, shadowRadius: 5, alpha: 0.4)
     }
    
 

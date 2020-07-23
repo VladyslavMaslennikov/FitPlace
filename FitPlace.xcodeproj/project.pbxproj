@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8723D6B124C99BB50063ACBC /* VideoCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723D6B024C99BB50063ACBC /* VideoCardViewController.swift */; };
+		8723D6B424C9A5880063ACBC /* VideoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723D6B224C9A5880063ACBC /* VideoCardCell.swift */; };
+		8723D6B524C9A5880063ACBC /* VideoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8723D6B324C9A5880063ACBC /* VideoCardCell.xib */; };
 		877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55424C883B400BA12D2 /* VerifyViewController.swift */; };
 		877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55624C888DA00BA12D2 /* Shadows.swift */; };
 		877BB55A24C8D51300BA12D2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8723D6B024C99BB50063ACBC /* VideoCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardViewController.swift; sourceTree = "<group>"; };
+		8723D6B224C9A5880063ACBC /* VideoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardCell.swift; sourceTree = "<group>"; };
+		8723D6B324C9A5880063ACBC /* VideoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCardCell.xib; sourceTree = "<group>"; };
 		877BB55424C883B400BA12D2 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		877BB55624C888DA00BA12D2 /* Shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadows.swift; sourceTree = "<group>"; };
 		877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -71,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8723D6AF24C99B760063ACBC /* Video Card */ = {
+			isa = PBXGroup;
+			children = (
+				8723D6B024C99BB50063ACBC /* VideoCardViewController.swift */,
+				8723D6B224C9A5880063ACBC /* VideoCardCell.swift */,
+				8723D6B324C9A5880063ACBC /* VideoCardCell.xib */,
+			);
+			path = "Video Card";
+			sourceTree = "<group>";
+		};
 		8753049824C8701F009D80F1 /* Verify */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +182,7 @@
 				87F5AE5224C7959700132173 /* Main User */,
 				8753049824C8701F009D80F1 /* Verify */,
 				877BB56724C8DCD600BA12D2 /* Video Library */,
+				8723D6AF24C99B760063ACBC /* Video Card */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -267,6 +284,7 @@
 				877BB56224C8D53600BA12D2 /* Montserrat-SemiBold.ttf in Resources */,
 				87F5AE3C24C72F3D00132173 /* Assets.xcassets in Resources */,
 				87F5AE3A24C72F3B00132173 /* Main.storyboard in Resources */,
+				8723D6B524C9A5880063ACBC /* VideoCardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +298,9 @@
 				87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */,
 				877BB56C24C8E10000BA12D2 /* VideoLibraryCell.swift in Sources */,
 				877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */,
+				8723D6B424C9A5880063ACBC /* VideoCardCell.swift in Sources */,
 				877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */,
+				8723D6B124C99BB50063ACBC /* VideoCardViewController.swift in Sources */,
 				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,
 				87F5AE4E24C735D400132173 /* Theme.swift in Sources */,
 				87F5AE4724C7305D00132173 /* CGFloatExtension.swift in Sources */,

@@ -16,16 +16,11 @@ class VerifyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        setupUI()
+    override func viewDidLayoutSubviews() {
+        Shadow.shadowToView(view: cancelShadowView, radiusForPath: 25, shadowRadius: 5, alpha: 0.2)
+        Shadow.shadowToView(view: okShadowView, radiusForPath: 25, shadowRadius: 5, alpha: 0.2)
     }
     
-    private func setupUI() {
-        Shadow.apply(view: cancelShadowView, radius: 25, alpha: 0.2)
-        Shadow.apply(view: okShadowView, radius: 25, alpha: 0.2)
-    }
-
 }
