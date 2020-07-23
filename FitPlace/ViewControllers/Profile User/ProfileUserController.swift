@@ -34,6 +34,7 @@ class ProfileUserController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.allowsSelection = false
         tableView.isScrollEnabled = false
         tableView.backgroundColor = .clear
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: userDataCellId, bundle: nil), forCellReuseIdentifier: userDataCellId)
         tableView.register(UINib(nibName: otherDataCellId, bundle: nil), forCellReuseIdentifier: otherDataCellId)
     }
@@ -47,8 +48,8 @@ class ProfileUserController: UIViewController, UITableViewDelegate, UITableViewD
         let otherCell = tableView.dequeueReusableCell(withIdentifier: otherDataCellId, for: indexPath) as! OtherDataCell
         
         let screenWidth = UIScreen.main.bounds.width >= 414
-        let smallFontBold = UIFont(name: Montserrat(.bold).font, size: 13)
-        let bigFontBold = UIFont(name: Montserrat(.bold).font, size: 16)
+        let smallFontBold = UIFont(name: Montserrat(.bold).font, size: 14)
+        let bigFontBold = UIFont(name: Montserrat(.bold).font, size: 17)
         let smallFontRegular = UIFont(name: Montserrat(.regular).font, size: 13)
         let bigFontRegular = UIFont(name: Montserrat(.regular).font, size: 16)
         

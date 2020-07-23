@@ -22,9 +22,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYL-AA-o0I">
-                        <rect key="frame" x="15" y="25.5" width="192" height="55"/>
+                        <rect key="frame" x="15" y="35.5" width="192" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="55" id="WIu-hR-9Ot"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="WIu-hR-9Ot"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -45,9 +45,9 @@
                         <color key="onTintColor" red="1" green="0.97644680740000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </switch>
                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-uT-B9u">
-                        <rect key="frame" x="207" y="25.5" width="98" height="55"/>
+                        <rect key="frame" x="207" y="35.5" width="98" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="55" id="xDQ-1K-B4r"/>
+                            <constraint firstAttribute="height" constant="35" id="JsA-Ks-onk"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                         <nil key="textColor"/>
@@ -64,6 +64,7 @@
                     <constraint firstItem="mYL-AA-o0I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YQX-ht-wzs"/>
                     <constraint firstItem="8CX-uT-B9u" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fJE-uC-dh5"/>
                     <constraint firstAttribute="trailing" secondItem="3It-zD-lya" secondAttribute="trailing" constant="15" id="hdR-Np-brM"/>
+                    <constraint firstItem="mYL-AA-o0I" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kX4-bg-5z2"/>
                     <constraint firstItem="AMU-WP-oE1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rp2-Op-fjm"/>
                 </constraints>
             </tableViewCellContentView>
@@ -75,7 +76,7 @@
                 <outlet property="mainTitleLabel" destination="mYL-AA-o0I" id="iIR-Ki-IQc"/>
                 <outlet property="switchView" destination="3It-zD-lya" id="KVu-nT-oIB"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+            <point key="canvasLocation" x="137.68115942028987" y="119.19642857142857"/>
         </tableViewCell>
     </objects>
     <resources>
