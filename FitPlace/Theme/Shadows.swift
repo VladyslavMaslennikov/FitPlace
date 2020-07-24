@@ -13,7 +13,7 @@ class Shadow {
         view.backgroundColor = .clear
         let layer = view.layer
         layer.masksToBounds = false
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = UIColor.darkGray.cgColor
         layer.shadowOffset = CGSize(width: left, height: top)
         layer.shadowRadius = shadowRadius
         layer.shadowOpacity = 0.4
