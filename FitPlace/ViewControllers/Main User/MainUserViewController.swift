@@ -37,11 +37,11 @@ class MainUserViewController: UIViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: sectionOne, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
-        Shadow.shadowToView(view: sectionTwo, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
-        Shadow.shadowToView(view: sectionThree, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
-        Shadow.shadowToView(view: sectionFour, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
-        Shadow.shadowToView(view: sectionFive, radiusForPath: 15, shadowRadius: 5, alpha: 0.4)
+        Shadow.shadowToView(view: sectionOne, radiusForPath: 15, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView(view: sectionTwo, radiusForPath: 15, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView(view: sectionThree, radiusForPath: 15, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView(view: sectionFour, radiusForPath: 15, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView(view: sectionFive, radiusForPath: 15, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
     }
 }
 

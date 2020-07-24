@@ -27,7 +27,7 @@ class HeaderCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        Shadow.shadowToView(view: self, radiusForPath: 15, shadowRadius: 2, alpha: 0.4)
+        Shadow.shadowToView(view: self, radiusForPath: 15, shadowRadius: 2, alpha: 0.4, top: 2, left: 0)
     }
 
 }

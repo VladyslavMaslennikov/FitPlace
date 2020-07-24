@@ -23,13 +23,7 @@ class VideoLibraryCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        shadowView.backgroundColor = .clear
-        shadowView.layer.masksToBounds = false
-        shadowView.layer.shadowColor = UIColor.black.cgColor
-        shadowView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        shadowView.layer.shadowRadius = 5
-        shadowView.layer.shadowOpacity = 0.4
-        shadowView.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: frame.width, height: frame.height), cornerRadius: 15).cgPath
+        Shadow.shadowToView(view: shadowView, radiusForPath: 15, shadowRadius: 5, alpha: 0.3, top: 3, left: 0)
     }
 
 }

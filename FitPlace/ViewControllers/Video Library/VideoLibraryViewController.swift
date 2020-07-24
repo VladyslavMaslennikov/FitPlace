@@ -19,14 +19,7 @@ class VideoLibraryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.isTranslucent = true
-//        navigationController?.navigationBar.backgroundColor = .clear
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.barTintColor = .backgroundThemeColor
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Montserrat(.bold).font, size: 16) as Any]
         view.backgroundColor = .backgroundThemeColor
-        
         setUpCollectionView()
     }
     

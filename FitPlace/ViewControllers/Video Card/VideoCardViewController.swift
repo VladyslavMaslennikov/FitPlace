@@ -20,10 +20,7 @@ class VideoCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.barTintColor = .backgroundThemeColor
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Montserrat(.bold).font, size: 16) as Any]
+        
         backgroundView.backgroundColor = .clear
         view.backgroundColor = .backgroundThemeColor
         
@@ -32,13 +29,7 @@ class VideoCardViewController: UIViewController {
     
 
     override func viewDidLayoutSubviews() {
-        shadowViewButton.backgroundColor = .clear
-        shadowViewButton.layer.masksToBounds = false
-        shadowViewButton.layer.shadowColor = UIColor.black.cgColor
-        shadowViewButton.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        shadowViewButton.layer.shadowRadius = 5
-        shadowViewButton.layer.shadowOpacity = 0.4
-        shadowViewButton.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: shadowViewButton.frame.width, height: shadowViewButton.frame.height), cornerRadius: 25).cgPath
+        Shadow.shadowToView(view: shadowViewButton, radiusForPath: 25, shadowRadius: 5, alpha: 0.4, top: 3, left: 0)
     }
     
 }

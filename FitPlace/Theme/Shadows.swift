@@ -9,12 +9,12 @@
 import UIKit
 
 class Shadow {
-    static func shadowToView(view: UIView, radiusForPath: CGFloat, shadowRadius: CGFloat, alpha: Float) {
+    static func shadowToView(view: UIView, radiusForPath: CGFloat, shadowRadius: CGFloat, alpha: Float, top: CGFloat, left: CGFloat) {
         view.backgroundColor = .clear
         let layer = view.layer
         layer.masksToBounds = false
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        layer.shadowOffset = CGSize(width: left, height: top)
         layer.shadowRadius = shadowRadius
         layer.shadowOpacity = 0.4
         layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: radiusForPath).cgPath
