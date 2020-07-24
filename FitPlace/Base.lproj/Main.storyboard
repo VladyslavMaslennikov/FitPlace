@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t63-o4-E0C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -1030,7 +1030,6 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Afc-PI-faf" secondAttribute="height" multiplier="1:1" id="L4D-M5-NcI"/>
                                                             <constraint firstItem="di0-gN-z4Y" firstAttribute="leading" secondItem="Afc-PI-faf" secondAttribute="leading" id="bb7-70-4OT"/>
                                                             <constraint firstItem="di0-gN-z4Y" firstAttribute="centerX" secondItem="Afc-PI-faf" secondAttribute="centerX" id="fTb-pK-Yag"/>
                                                             <constraint firstItem="di0-gN-z4Y" firstAttribute="top" secondItem="Afc-PI-faf" secondAttribute="top" id="iSB-jw-4Ww"/>

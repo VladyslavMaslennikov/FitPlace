@@ -73,20 +73,20 @@ class UserDataViewController: UIViewController {
         Shadow.shadowToView(view: sundayView, radiusForPath: sundayButton.frame.size.height / 2, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //day time
-        applyCornerRadius(for: morningButton, radius: 10)
-        Shadow.shadowToView(view: morningView, radiusForPath: 10, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
-        applyCornerRadius(for: dayButton, radius: 10)
-        applyCornerRadius(for: eveningButton, radius: 10)
+        applyCornerRadius(for: morningButton, radius: 15)
+        Shadow.shadowToView(view: morningView, radiusForPath: 15, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: dayButton, radius: 15)
+        applyCornerRadius(for: eveningButton, radius: 15)
         
         //duration
-        applyCornerRadius(for: time30Button, radius: 10)
-        applyCornerRadius(for: time45Button, radius: 10)
-        applyCornerRadius(for: time60Button, radius: 10)
-        Shadow.shadowToView(view: time60View, radiusForPath: 10, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: time30Button, radius: 15)
+        applyCornerRadius(for: time45Button, radius: 15)
+        applyCornerRadius(for: time60Button, radius: 15)
+        Shadow.shadowToView(view: time60View, radiusForPath: 15, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //save button
-        applyCornerRadius(for: saveButton, radius: 10)
-        Shadow.shadowToView(view: saveView, radiusForPath: 10, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: saveButton, radius: 25)
+        Shadow.shadowToView(view: saveView, radiusForPath: 25, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //textviews
         textViewOne.layer.masksToBounds = true

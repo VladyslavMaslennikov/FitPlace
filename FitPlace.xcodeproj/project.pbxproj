@@ -16,6 +16,7 @@
 		873A746024CA1EF2005913E6 /* OtherDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A745E24CA1EF2005913E6 /* OtherDataCell.swift */; };
 		873A746124CA1EF2005913E6 /* OtherDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873A745F24CA1EF2005913E6 /* OtherDataCell.xib */; };
 		873A746424CAD786005913E6 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A746324CAD786005913E6 /* UserDataViewController.swift */; };
+		873A746724CB6DDC005913E6 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A746624CB6DDC005913E6 /* PayViewController.swift */; };
 		877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55424C883B400BA12D2 /* VerifyViewController.swift */; };
 		877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55624C888DA00BA12D2 /* Shadows.swift */; };
 		877BB55A24C8D51300BA12D2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */; };
@@ -51,6 +52,7 @@
 		873A745E24CA1EF2005913E6 /* OtherDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDataCell.swift; sourceTree = "<group>"; };
 		873A745F24CA1EF2005913E6 /* OtherDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherDataCell.xib; sourceTree = "<group>"; };
 		873A746324CAD786005913E6 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
+		873A746624CB6DDC005913E6 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		877BB55424C883B400BA12D2 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		877BB55624C888DA00BA12D2 /* Shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadows.swift; sourceTree = "<group>"; };
 		877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 				873A746324CAD786005913E6 /* UserDataViewController.swift */,
 			);
 			path = "User Data";
+			sourceTree = "<group>";
+		};
+		873A746524CB6DAE005913E6 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				873A746624CB6DDC005913E6 /* PayViewController.swift */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 		8753049824C8701F009D80F1 /* Verify */ = {
@@ -217,6 +227,7 @@
 				8723D6AF24C99B760063ACBC /* Video Card */,
 				8723D6B624C9D0480063ACBC /* Profile User */,
 				873A746224CAD713005913E6 /* User Data */,
+				873A746524CB6DAE005913E6 /* Pay */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +354,7 @@
 				87F5AE4E24C735D400132173 /* Theme.swift in Sources */,
 				87F5AE4724C7305D00132173 /* CGFloatExtension.swift in Sources */,
 				87F5AE5724C7990000132173 /* HeaderCollectionViewCell.swift in Sources */,
+				873A746724CB6DDC005913E6 /* PayViewController.swift in Sources */,
 				8723D6BA24C9D21D0063ACBC /* ProfileUserController.swift in Sources */,
 				877BB56624C8D7A200BA12D2 /* Fonts.swift in Sources */,
 				873A746024CA1EF2005913E6 /* OtherDataCell.swift in Sources */,
