@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DialogCell" rowHeight="117" id="KGk-i7-Jjw" customClass="DialogCell" customModule="FitPlace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF9-7O-Pcp" userLabel="Shadow">
+                        <rect key="frame" x="10" y="10" width="300" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmO-9P-hEU">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dialog2" translatesAutoresizingMaskIntoConstraints="NO" id="zdf-A8-Fhz">
+                                        <rect key="frame" x="10" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ql3-ky-sBd"/>
+                                            <constraint firstAttribute="width" constant="50" id="SKK-t5-2fL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ольга Петровна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb8-ay-yEL">
+                                        <rect key="frame" x="70" y="10" width="160" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:04" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPq-SP-FS0">
+                                        <rect key="frame" x="240" y="10" width="50" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Замечательно, до встречи в субботу!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-Mw-OsV">
+                                        <rect key="frame" x="70" y="32.5" width="220" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KuW-Mw-OsV" firstAttribute="top" secondItem="jb8-ay-yEL" secondAttribute="bottom" constant="5" id="2LD-HY-L8n"/>
+                                    <constraint firstItem="hPq-SP-FS0" firstAttribute="top" secondItem="HmO-9P-hEU" secondAttribute="top" constant="10" id="6YB-hk-5sc"/>
+                                    <constraint firstItem="zdf-A8-Fhz" firstAttribute="leading" secondItem="HmO-9P-hEU" secondAttribute="leading" constant="10" id="9N9-x8-Rj7"/>
+                                    <constraint firstItem="jb8-ay-yEL" firstAttribute="leading" secondItem="zdf-A8-Fhz" secondAttribute="trailing" constant="10" id="Ah5-7P-Dke"/>
+                                    <constraint firstItem="jb8-ay-yEL" firstAttribute="top" secondItem="HmO-9P-hEU" secondAttribute="top" constant="10" id="BC8-e5-VBt"/>
+                                    <constraint firstAttribute="trailing" secondItem="KuW-Mw-OsV" secondAttribute="trailing" constant="10" id="GUM-Kj-TJC"/>
+                                    <constraint firstItem="jb8-ay-yEL" firstAttribute="centerX" secondItem="HmO-9P-hEU" secondAttribute="centerX" id="Kfp-mM-jdN"/>
+                                    <constraint firstItem="zdf-A8-Fhz" firstAttribute="centerY" secondItem="HmO-9P-hEU" secondAttribute="centerY" id="Mwa-4P-Deb"/>
+                                    <constraint firstItem="KuW-Mw-OsV" firstAttribute="height" relation="greaterThanOrEqual" secondItem="HmO-9P-hEU" secondAttribute="height" multiplier="0.16875" id="Nbv-HT-Aq2"/>
+                                    <constraint firstItem="KuW-Mw-OsV" firstAttribute="leading" secondItem="zdf-A8-Fhz" secondAttribute="trailing" constant="10" id="au7-CS-qha"/>
+                                    <constraint firstItem="hPq-SP-FS0" firstAttribute="leading" secondItem="jb8-ay-yEL" secondAttribute="trailing" constant="10" id="dfg-3M-Srh"/>
+                                    <constraint firstItem="hPq-SP-FS0" firstAttribute="height" secondItem="jb8-ay-yEL" secondAttribute="height" id="in9-mA-p9D"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPq-SP-FS0" secondAttribute="trailing" constant="10" id="kDH-US-eYE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HmO-9P-hEU" secondAttribute="trailing" id="AMK-5E-ZIb"/>
+                            <constraint firstAttribute="bottom" secondItem="HmO-9P-hEU" secondAttribute="bottom" id="UFm-dr-KsI"/>
+                            <constraint firstItem="HmO-9P-hEU" firstAttribute="leading" secondItem="GF9-7O-Pcp" secondAttribute="leading" id="ZyH-OG-MjY"/>
+                            <constraint firstAttribute="height" constant="80" id="aFK-Qw-vJz"/>
+                            <constraint firstItem="HmO-9P-hEU" firstAttribute="top" secondItem="GF9-7O-Pcp" secondAttribute="top" id="r09-c3-FLs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GF9-7O-Pcp" secondAttribute="trailing" constant="10" id="Fyq-iV-wiV"/>
+                    <constraint firstAttribute="bottom" secondItem="GF9-7O-Pcp" secondAttribute="bottom" constant="10" id="YdC-uX-wgW"/>
+                    <constraint firstItem="GF9-7O-Pcp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="i93-sM-gxb"/>
+                    <constraint firstItem="GF9-7O-Pcp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jvv-oH-Ap3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="hPq-SP-FS0" id="VYd-mh-Z1I"/>
+                <outlet property="messageLabel" destination="KuW-Mw-OsV" id="Xi9-gs-AI0"/>
+                <outlet property="shadowView" destination="GF9-7O-Pcp" id="UnH-pb-ohn"/>
+                <outlet property="userNameLabel" destination="jb8-ay-yEL" id="1UC-mP-YrE"/>
+                <outlet property="userPhoto" destination="zdf-A8-Fhz" id="7wz-W7-Xyw"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dialog2" width="80" height="80"/>
+    </resources>
+</document>

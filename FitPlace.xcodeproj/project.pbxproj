@@ -18,6 +18,11 @@
 		873A746424CAD786005913E6 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A746324CAD786005913E6 /* UserDataViewController.swift */; };
 		873A746724CB6DDC005913E6 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A746624CB6DDC005913E6 /* PayViewController.swift */; };
 		873A746924CB7D84005913E6 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A746824CB7D84005913E6 /* PayTableViewCell.swift */; };
+		8750E20A24CB8DE8000E7B1E /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750E20924CB8DE8000E7B1E /* DialogsViewController.swift */; };
+		8750E20D24CB8E27000E7B1E /* DialogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750E20B24CB8E27000E7B1E /* DialogCell.swift */; };
+		8750E20E24CB8E27000E7B1E /* DialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8750E20C24CB8E27000E7B1E /* DialogCell.xib */; };
+		8750E21324CB9C9A000E7B1E /* MessageDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750E21124CB9C9A000E7B1E /* MessageDateCell.swift */; };
+		8750E21424CB9C9A000E7B1E /* MessageDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8750E21224CB9C9A000E7B1E /* MessageDateCell.xib */; };
 		877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55424C883B400BA12D2 /* VerifyViewController.swift */; };
 		877BB55724C888DA00BA12D2 /* Shadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB55624C888DA00BA12D2 /* Shadows.swift */; };
 		877BB55A24C8D51300BA12D2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */; };
@@ -55,6 +60,11 @@
 		873A746324CAD786005913E6 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
 		873A746624CB6DDC005913E6 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		873A746824CB7D84005913E6 /* PayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		8750E20924CB8DE8000E7B1E /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
+		8750E20B24CB8E27000E7B1E /* DialogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCell.swift; sourceTree = "<group>"; };
+		8750E20C24CB8E27000E7B1E /* DialogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogCell.xib; sourceTree = "<group>"; };
+		8750E21124CB9C9A000E7B1E /* MessageDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDateCell.swift; sourceTree = "<group>"; };
+		8750E21224CB9C9A000E7B1E /* MessageDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDateCell.xib; sourceTree = "<group>"; };
 		877BB55424C883B400BA12D2 /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		877BB55624C888DA00BA12D2 /* Shadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadows.swift; sourceTree = "<group>"; };
 		877BB55924C8D51300BA12D2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -135,6 +145,11 @@
 		873A746A24CB8213005913E6 /* Dialogs */ = {
 			isa = PBXGroup;
 			children = (
+				8750E20924CB8DE8000E7B1E /* DialogsViewController.swift */,
+				8750E20B24CB8E27000E7B1E /* DialogCell.swift */,
+				8750E20C24CB8E27000E7B1E /* DialogCell.xib */,
+				8750E21124CB9C9A000E7B1E /* MessageDateCell.swift */,
+				8750E21224CB9C9A000E7B1E /* MessageDateCell.xib */,
 			);
 			path = Dialogs;
 			sourceTree = "<group>";
@@ -334,7 +349,9 @@
 				877BB56024C8D52E00BA12D2 /* Montserrat-Regular.ttf in Resources */,
 				877BB56D24C8E10000BA12D2 /* VideoLibraryCell.xib in Resources */,
 				877BB55C24C8D51F00BA12D2 /* Montserrat-Light.ttf in Resources */,
+				8750E20E24CB8E27000E7B1E /* DialogCell.xib in Resources */,
 				877BB55A24C8D51300BA12D2 /* Montserrat-Bold.ttf in Resources */,
+				8750E21424CB9C9A000E7B1E /* MessageDateCell.xib in Resources */,
 				87F5AE3F24C72F3D00132173 /* LaunchScreen.storyboard in Resources */,
 				877BB55E24C8D52700BA12D2 /* Montserrat-Medium.ttf in Resources */,
 				87F5AE5824C7990000132173 /* HeaderCollectionViewCell.xib in Resources */,
@@ -360,6 +377,7 @@
 				8723D6B424C9A5880063ACBC /* VideoCardCell.swift in Sources */,
 				877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */,
 				873A746924CB7D84005913E6 /* PayTableViewCell.swift in Sources */,
+				8750E20D24CB8E27000E7B1E /* DialogCell.swift in Sources */,
 				8723D6B124C99BB50063ACBC /* VideoCardViewController.swift in Sources */,
 				873A745C24CA1CCF005913E6 /* UserDataCell.swift in Sources */,
 				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,
@@ -370,6 +388,8 @@
 				8723D6BA24C9D21D0063ACBC /* ProfileUserController.swift in Sources */,
 				877BB56624C8D7A200BA12D2 /* Fonts.swift in Sources */,
 				873A746024CA1EF2005913E6 /* OtherDataCell.swift in Sources */,
+				8750E21324CB9C9A000E7B1E /* MessageDateCell.swift in Sources */,
+				8750E20A24CB8DE8000E7B1E /* DialogsViewController.swift in Sources */,
 				87F5AE5124C785DB00132173 /* AuthViewController.swift in Sources */,
 				87F5AE5424C795AE00132173 /* MainUserViewController.swift in Sources */,
 				87F5AE3524C72F3B00132173 /* SceneDelegate.swift in Sources */,
