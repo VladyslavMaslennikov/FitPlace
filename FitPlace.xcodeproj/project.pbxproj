@@ -11,6 +11,7 @@
 		8723D6B424C9A5880063ACBC /* VideoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723D6B224C9A5880063ACBC /* VideoCardCell.swift */; };
 		8723D6B524C9A5880063ACBC /* VideoCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8723D6B324C9A5880063ACBC /* VideoCardCell.xib */; };
 		8723D6BA24C9D21D0063ACBC /* ProfileUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723D6B924C9D21D0063ACBC /* ProfileUserController.swift */; };
+		872CB20A24CCE14900B61A81 /* ManagerDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872CB20924CCE14900B61A81 /* ManagerDataViewController.swift */; };
 		873A745C24CA1CCF005913E6 /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A745A24CA1CCF005913E6 /* UserDataCell.swift */; };
 		873A745D24CA1CCF005913E6 /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873A745B24CA1CCF005913E6 /* UserDataCell.xib */; };
 		873A746024CA1EF2005913E6 /* OtherDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A745E24CA1EF2005913E6 /* OtherDataCell.swift */; };
@@ -61,6 +62,7 @@
 		8723D6B224C9A5880063ACBC /* VideoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardCell.swift; sourceTree = "<group>"; };
 		8723D6B324C9A5880063ACBC /* VideoCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCardCell.xib; sourceTree = "<group>"; };
 		8723D6B924C9D21D0063ACBC /* ProfileUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserController.swift; sourceTree = "<group>"; };
+		872CB20924CCE14900B61A81 /* ManagerDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerDataViewController.swift; sourceTree = "<group>"; };
 		873A745A24CA1CCF005913E6 /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		873A745B24CA1CCF005913E6 /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
 		873A745E24CA1EF2005913E6 /* OtherDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDataCell.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				873A745F24CA1EF2005913E6 /* OtherDataCell.xib */,
 			);
 			path = "Profile User";
+			sourceTree = "<group>";
+		};
+		872CB20824CCE12700B61A81 /* Manager Data */ = {
+			isa = PBXGroup;
+			children = (
+				872CB20924CCE14900B61A81 /* ManagerDataViewController.swift */,
+			);
+			path = "Manager Data";
 			sourceTree = "<group>";
 		};
 		873A746224CAD713005913E6 /* User Data */ = {
@@ -318,6 +328,7 @@
 				8751EE8824CC4A3A00391AFA /* Messages */,
 				878BDB9624CCA7DA00723A66 /* Manager Profile */,
 				878BDB9924CCC4EB00723A66 /* Pay Manager */,
+				872CB20824CCE12700B61A81 /* Manager Data */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -448,6 +459,7 @@
 				8751EE8E24CC4BED00391AFA /* MessageBubbleCell.swift in Sources */,
 				8723D6B124C99BB50063ACBC /* VideoCardViewController.swift in Sources */,
 				878BDB9824CCA81700723A66 /* ManagerProfileViewController.swift in Sources */,
+				872CB20A24CCE14900B61A81 /* ManagerDataViewController.swift in Sources */,
 				873A745C24CA1CCF005913E6 /* UserDataCell.swift in Sources */,
 				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,
 				87F5AE4E24C735D400132173 /* Theme.swift in Sources */,
