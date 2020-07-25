@@ -41,6 +41,8 @@
 		877BB56C24C8E10000BA12D2 /* VideoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */; };
 		877BB56D24C8E10000BA12D2 /* VideoLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */; };
 		878BDB9824CCA81700723A66 /* ManagerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878BDB9724CCA81700723A66 /* ManagerProfileViewController.swift */; };
+		878BDB9B24CCD30E00723A66 /* PayManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878BDB9A24CCD30E00723A66 /* PayManagerViewController.swift */; };
+		878BDB9D24CCD5A300723A66 /* PayManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878BDB9C24CCD5A300723A66 /* PayManagerCell.swift */; };
 		87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3224C72F3B00132173 /* AppDelegate.swift */; };
 		87F5AE3524C72F3B00132173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3424C72F3B00132173 /* SceneDelegate.swift */; };
 		87F5AE3A24C72F3B00132173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F5AE3824C72F3B00132173 /* Main.storyboard */; };
@@ -89,6 +91,8 @@
 		877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibraryCell.swift; sourceTree = "<group>"; };
 		877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoLibraryCell.xib; sourceTree = "<group>"; };
 		878BDB9724CCA81700723A66 /* ManagerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProfileViewController.swift; sourceTree = "<group>"; };
+		878BDB9A24CCD30E00723A66 /* PayManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayManagerViewController.swift; sourceTree = "<group>"; };
+		878BDB9C24CCD5A300723A66 /* PayManagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayManagerCell.swift; sourceTree = "<group>"; };
 		87F5AE2F24C72F3B00132173 /* FitPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F5AE3224C72F3B00132173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F5AE3424C72F3B00132173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +237,15 @@
 			path = "Manager Profile";
 			sourceTree = "<group>";
 		};
+		878BDB9924CCC4EB00723A66 /* Pay Manager */ = {
+			isa = PBXGroup;
+			children = (
+				878BDB9A24CCD30E00723A66 /* PayManagerViewController.swift */,
+				878BDB9C24CCD5A300723A66 /* PayManagerCell.swift */,
+			);
+			path = "Pay Manager";
+			sourceTree = "<group>";
+		};
 		87F5AE2624C72F3B00132173 = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +317,7 @@
 				873A746A24CB8213005913E6 /* Dialogs */,
 				8751EE8824CC4A3A00391AFA /* Messages */,
 				878BDB9624CCA7DA00723A66 /* Manager Profile */,
+				878BDB9924CCC4EB00723A66 /* Pay Manager */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -427,6 +441,7 @@
 				873A746424CAD786005913E6 /* UserDataViewController.swift in Sources */,
 				8723D6B424C9A5880063ACBC /* VideoCardCell.swift in Sources */,
 				877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */,
+				878BDB9B24CCD30E00723A66 /* PayManagerViewController.swift in Sources */,
 				8751EE8A24CC4A5E00391AFA /* MessagesViewController.swift in Sources */,
 				873A746924CB7D84005913E6 /* PayTableViewCell.swift in Sources */,
 				8750E20D24CB8E27000E7B1E /* DialogCell.swift in Sources */,
@@ -439,6 +454,7 @@
 				87F5AE4724C7305D00132173 /* CGFloatExtension.swift in Sources */,
 				87F5AE5724C7990000132173 /* HeaderCollectionViewCell.swift in Sources */,
 				873A746724CB6DDC005913E6 /* PayViewController.swift in Sources */,
+				878BDB9D24CCD5A300723A66 /* PayManagerCell.swift in Sources */,
 				8723D6BA24C9D21D0063ACBC /* ProfileUserController.swift in Sources */,
 				877BB56624C8D7A200BA12D2 /* Fonts.swift in Sources */,
 				8751EE9224CC4C1900391AFA /* RightMessageBubbleViewCell.swift in Sources */,
