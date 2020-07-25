@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DhT-Fl-1Wd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e6y-hG-xog">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -2046,6 +2046,75 @@
             </objects>
             <point key="canvasLocation" x="6028.985507246377" y="1057.3660714285713"/>
         </scene>
+        <!--Сообщения-->
+        <scene sceneID="mYE-DQ-kre">
+            <objects>
+                <viewController id="euv-td-xwC" customClass="MessagesViewController" customModule="FitPlace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F6y-1J-t0A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1WG-2s-DYI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftMessageBubbleCell" id="F35-L8-ZPJ" customClass="LeftMessageBubbleCell" customModule="FitPlace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F35-L8-ZPJ" id="wyR-fo-kel">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RightMessageBubbleViewCell" id="9Aj-Un-SaQ" customClass="RightMessageBubbleViewCell" customModule="FitPlace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Aj-Un-SaQ" id="NB4-9Y-a7r">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageDateSectionCell" id="sdy-hy-Hrp" customClass="MessageDateSectionCell" customModule="FitPlace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sdy-hy-Hrp" id="P23-It-9If">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-OG-GbB">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zEx-0E-FQh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u4i-OG-GbB" firstAttribute="centerX" secondItem="F6y-1J-t0A" secondAttribute="centerX" id="1Vs-VZ-G0G"/>
+                            <constraint firstItem="BRq-Rs-pg6" firstAttribute="trailing" secondItem="1WG-2s-DYI" secondAttribute="trailing" id="2wX-hs-Y01"/>
+                            <constraint firstItem="u4i-OG-GbB" firstAttribute="leading" secondItem="BRq-Rs-pg6" secondAttribute="leading" id="YTB-gJ-NIe"/>
+                            <constraint firstItem="1WG-2s-DYI" firstAttribute="leading" secondItem="BRq-Rs-pg6" secondAttribute="leading" id="bf0-Ax-q7O"/>
+                            <constraint firstItem="u4i-OG-GbB" firstAttribute="top" secondItem="1WG-2s-DYI" secondAttribute="bottom" id="eeK-T7-qrt"/>
+                            <constraint firstItem="1WG-2s-DYI" firstAttribute="top" secondItem="BRq-Rs-pg6" secondAttribute="top" id="ixq-7i-ddm"/>
+                            <constraint firstItem="BRq-Rs-pg6" firstAttribute="bottom" secondItem="u4i-OG-GbB" secondAttribute="bottom" id="rbz-hx-gDj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BRq-Rs-pg6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сообщения" id="QIk-oG-oSZ">
+                        <barButtonItem key="rightBarButtonItem" image="supportLogo" id="G45-Ms-rQQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="1WG-2s-DYI" id="hhM-HO-PzU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uI-Og-pbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7963.7681159420299" y="1058.7053571428571"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZBc-Qa-EGs">
             <objects>
@@ -2118,6 +2187,24 @@
             </objects>
             <point key="canvasLocation" x="5245" y="1059"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T0L-ur-tL8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e6y-hG-xog" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="enE-c9-LWd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="euv-td-xwC" kind="relationship" relationship="rootViewController" id="9jT-Pp-q7f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wru-LF-Rip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7053.6231884057979" y="1058.7053571428571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow_right" width="12" height="24"/>
@@ -2129,6 +2216,7 @@
         <image name="section3" width="1164" height="652"/>
         <image name="section4" width="1164" height="652"/>
         <image name="section5" width="1164" height="652"/>
+        <image name="supportLogo" width="20" height="20"/>
         <image name="video_course_image" width="564" height="295"/>
     </resources>
 </document>
