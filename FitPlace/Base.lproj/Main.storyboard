@@ -2055,7 +2055,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1WG-2s-DYI">
-                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftMessageBubbleCell" id="F35-L8-ZPJ" customClass="LeftMessageBubbleCell" customModule="FitPlace" customModuleProvider="target">
@@ -2084,10 +2084,61 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-OG-GbB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-OG-GbB" userLabel="Shadow">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKM-yC-4lp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите текст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="akC-KF-7Tc">
+                                        <rect key="frame" x="41.5" y="10" width="331" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ak3-DH-0K4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUX-P2-wSa">
+                                        <rect key="frame" x="10" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Q4J-Yg-MVi"/>
+                                            <constraint firstAttribute="height" constant="20" id="xqM-gB-F7A"/>
+                                        </constraints>
+                                        <state key="normal" image="add_image_button"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irf-FE-l8H">
+                                        <rect key="frame" x="41.5" y="40" width="331" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="NaZ-om-bMh"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-SC-ycg">
+                                        <rect key="frame" x="384" y="15" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zj8-Jk-rtH"/>
+                                            <constraint firstAttribute="width" constant="20" id="tTf-0N-r0U"/>
+                                        </constraints>
+                                        <state key="normal" image="vector_image_data"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="4JJ-SC-ycg" firstAttribute="centerY" secondItem="u4i-OG-GbB" secondAttribute="centerY" id="1zZ-8Z-ZFh"/>
+                                    <constraint firstItem="akC-KF-7Tc" firstAttribute="top" secondItem="u4i-OG-GbB" secondAttribute="top" constant="10" id="5KQ-aZ-H00"/>
+                                    <constraint firstItem="pKM-yC-4lp" firstAttribute="centerX" secondItem="u4i-OG-GbB" secondAttribute="centerX" id="A5L-li-ZuR"/>
+                                    <constraint firstItem="irf-FE-l8H" firstAttribute="top" secondItem="akC-KF-7Tc" secondAttribute="bottom" id="Cnv-GN-Ead"/>
+                                    <constraint firstItem="akC-KF-7Tc" firstAttribute="centerX" secondItem="u4i-OG-GbB" secondAttribute="centerX" id="DU2-5y-b9N"/>
+                                    <constraint firstItem="pKM-yC-4lp" firstAttribute="leading" secondItem="u4i-OG-GbB" secondAttribute="leading" id="GOr-te-w9n"/>
+                                    <constraint firstItem="irf-FE-l8H" firstAttribute="centerX" secondItem="u4i-OG-GbB" secondAttribute="centerX" id="TbM-GC-xtU"/>
+                                    <constraint firstItem="pKM-yC-4lp" firstAttribute="centerY" secondItem="u4i-OG-GbB" secondAttribute="centerY" id="Z7x-7b-ORb"/>
+                                    <constraint firstItem="hUX-P2-wSa" firstAttribute="centerY" secondItem="u4i-OG-GbB" secondAttribute="centerY" id="gY1-kg-HSu"/>
+                                    <constraint firstAttribute="trailing" secondItem="4JJ-SC-ycg" secondAttribute="trailing" constant="10" id="hLG-cj-rDy"/>
+                                    <constraint firstItem="akC-KF-7Tc" firstAttribute="width" secondItem="pKM-yC-4lp" secondAttribute="width" multiplier="0.8" id="qJ8-ez-jXV"/>
+                                    <constraint firstItem="hUX-P2-wSa" firstAttribute="leading" secondItem="u4i-OG-GbB" secondAttribute="leading" constant="10" id="szK-TM-OUu"/>
+                                    <constraint firstItem="pKM-yC-4lp" firstAttribute="top" secondItem="u4i-OG-GbB" secondAttribute="top" id="vHp-4b-szw"/>
+                                    <constraint firstItem="irf-FE-l8H" firstAttribute="width" secondItem="akC-KF-7Tc" secondAttribute="width" id="wea-vh-gpo"/>
                                     <constraint firstAttribute="height" constant="50" id="zEx-0E-FQh"/>
                                 </constraints>
                             </view>
@@ -2098,16 +2149,21 @@
                             <constraint firstItem="BRq-Rs-pg6" firstAttribute="trailing" secondItem="1WG-2s-DYI" secondAttribute="trailing" id="2wX-hs-Y01"/>
                             <constraint firstItem="u4i-OG-GbB" firstAttribute="leading" secondItem="BRq-Rs-pg6" secondAttribute="leading" id="YTB-gJ-NIe"/>
                             <constraint firstItem="1WG-2s-DYI" firstAttribute="leading" secondItem="BRq-Rs-pg6" secondAttribute="leading" id="bf0-Ax-q7O"/>
-                            <constraint firstItem="u4i-OG-GbB" firstAttribute="top" secondItem="1WG-2s-DYI" secondAttribute="bottom" id="eeK-T7-qrt"/>
+                            <constraint firstItem="u4i-OG-GbB" firstAttribute="top" secondItem="1WG-2s-DYI" secondAttribute="bottom" constant="10" id="eeK-T7-qrt"/>
                             <constraint firstItem="1WG-2s-DYI" firstAttribute="top" secondItem="BRq-Rs-pg6" secondAttribute="top" id="ixq-7i-ddm"/>
                             <constraint firstItem="BRq-Rs-pg6" firstAttribute="bottom" secondItem="u4i-OG-GbB" secondAttribute="bottom" id="rbz-hx-gDj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BRq-Rs-pg6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Сообщения" id="QIk-oG-oSZ">
+                        <leftBarButtonItems>
+                            <barButtonItem id="vlm-NZ-Vyg"/>
+                            <barButtonItem title="Item" image="back_arrow" id="teY-MK-pW5"/>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" image="supportLogo" id="G45-Ms-rQQ"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="shadowView" destination="u4i-OG-GbB" id="UV7-nJ-Ota"/>
                         <outlet property="tableView" destination="1WG-2s-DYI" id="hhM-HO-PzU"/>
                     </connections>
                 </viewController>
@@ -2207,6 +2263,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add_image_button" width="28" height="28"/>
         <image name="arrow_right" width="12" height="24"/>
         <image name="back_arrow" width="12" height="24"/>
         <image name="fitplace_logo" width="250" height="86"/>
@@ -2217,6 +2274,7 @@
         <image name="section4" width="1164" height="652"/>
         <image name="section5" width="1164" height="652"/>
         <image name="supportLogo" width="20" height="20"/>
+        <image name="vector_image_data" width="25" height="28"/>
         <image name="video_course_image" width="564" height="295"/>
     </resources>
 </document>

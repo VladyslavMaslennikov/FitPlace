@@ -11,6 +11,7 @@ import UIKit
 class MessagesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var shadowView: UIView!
     
     private let messages = [
         MessageInfo(isDateSection: false, isLeft: true, message: "Пожалуйста, обращайтесь к нам в любое время", sentTime: "17:35"),
@@ -28,7 +29,12 @@ class MessagesViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .backgroundThemeColor
         setupTableView()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        Shadow.shadowToView(view: shadowView, radiusForPath: 0, shadowRadius: 3, alpha: 0.4, top: -2, left: 0)
     }
     
     private func setupTableView() {
@@ -41,7 +47,7 @@ class MessagesViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.register(MessageDateSectionCell.self, forCellReuseIdentifier: dateSection)
         
         tableView.transform = CGAffineTransform(rotationAngle: -(CGFloat)(Double.pi));
-        tableView.backgroundColor = .backgroundThemeColor
+        tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
     }
     

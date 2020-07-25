@@ -66,7 +66,7 @@ class MessageBubbleCell: UITableViewCell {
     }
     
     func configureLayout() {
-        backgroundColor = .backgroundThemeColor
+        backgroundColor = .clear
         contentView.addSubview(bubbleBackground)
         contentView.addSubview(bubbleMessage)
         contentView.addSubview(timeSentLabel)
