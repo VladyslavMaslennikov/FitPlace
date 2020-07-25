@@ -40,6 +40,7 @@
 		877BB56924C8DCFA00BA12D2 /* VideoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56824C8DCFA00BA12D2 /* VideoLibraryViewController.swift */; };
 		877BB56C24C8E10000BA12D2 /* VideoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */; };
 		877BB56D24C8E10000BA12D2 /* VideoLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */; };
+		878BDB9824CCA81700723A66 /* ManagerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878BDB9724CCA81700723A66 /* ManagerProfileViewController.swift */; };
 		87F5AE3324C72F3B00132173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3224C72F3B00132173 /* AppDelegate.swift */; };
 		87F5AE3524C72F3B00132173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F5AE3424C72F3B00132173 /* SceneDelegate.swift */; };
 		87F5AE3A24C72F3B00132173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F5AE3824C72F3B00132173 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		877BB56824C8DCFA00BA12D2 /* VideoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibraryViewController.swift; sourceTree = "<group>"; };
 		877BB56A24C8E10000BA12D2 /* VideoLibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibraryCell.swift; sourceTree = "<group>"; };
 		877BB56B24C8E10000BA12D2 /* VideoLibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoLibraryCell.xib; sourceTree = "<group>"; };
+		878BDB9724CCA81700723A66 /* ManagerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProfileViewController.swift; sourceTree = "<group>"; };
 		87F5AE2F24C72F3B00132173 /* FitPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F5AE3224C72F3B00132173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F5AE3424C72F3B00132173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,14 @@
 			path = "Video Library";
 			sourceTree = "<group>";
 		};
+		878BDB9624CCA7DA00723A66 /* Manager Profile */ = {
+			isa = PBXGroup;
+			children = (
+				878BDB9724CCA81700723A66 /* ManagerProfileViewController.swift */,
+			);
+			path = "Manager Profile";
+			sourceTree = "<group>";
+		};
 		87F5AE2624C72F3B00132173 = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +303,7 @@
 				873A746524CB6DAE005913E6 /* Pay */,
 				873A746A24CB8213005913E6 /* Dialogs */,
 				8751EE8824CC4A3A00391AFA /* Messages */,
+				878BDB9624CCA7DA00723A66 /* Manager Profile */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -421,6 +432,7 @@
 				8750E20D24CB8E27000E7B1E /* DialogCell.swift in Sources */,
 				8751EE8E24CC4BED00391AFA /* MessageBubbleCell.swift in Sources */,
 				8723D6B124C99BB50063ACBC /* VideoCardViewController.swift in Sources */,
+				878BDB9824CCA81700723A66 /* ManagerProfileViewController.swift in Sources */,
 				873A745C24CA1CCF005913E6 /* UserDataCell.swift in Sources */,
 				877BB55524C883B400BA12D2 /* VerifyViewController.swift in Sources */,
 				87F5AE4E24C735D400132173 /* Theme.swift in Sources */,
