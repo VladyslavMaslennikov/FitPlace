@@ -34,10 +34,10 @@ class PayViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: cardView, radiusForPath: 25, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView2(view: cardView, radiusForPath: 25, shadowRadius: 5, alpha: 0.4, top: 2, left: 0)
         Shadow.shadowToView(view: balanceView, radiusForPath: 15, shadowRadius: 3, alpha: 0.4, top: 2, left: 0)
         Shadow.shadowToView(view: subscriptionsView, radiusForPath: 15, shadowRadius: 3, alpha: 0.4, top: 2, left: 0)
-        Shadow.shadowToView(view: operationsView, radiusForPath: 15, shadowRadius: 8, alpha: 0.8, top: -2, left: 0)
+        Shadow.shadowToView2(view: operationsView, radiusForPath: 15, shadowRadius: 9, alpha: 0.5, top: 0, left: 0)
         
     }
 

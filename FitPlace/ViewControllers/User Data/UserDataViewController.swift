@@ -10,6 +10,13 @@ import UIKit
 
 class UserDataViewController: UIViewController {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var sexTextField: UITextField!
+    @IBOutlet weak var heightTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
+    
     @IBOutlet weak var mondayView: UIView!
     @IBOutlet weak var mondayButton: UIButton!
     @IBOutlet weak var thuesdayView: UIView!
@@ -73,31 +80,41 @@ class UserDataViewController: UIViewController {
         Shadow.shadowToView(view: sundayView, radiusForPath: sundayButton.frame.size.height / 2, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //day time
-        applyCornerRadius(for: morningButton, radius: 15)
-        Shadow.shadowToView(view: morningView, radiusForPath: 15, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
-        applyCornerRadius(for: dayButton, radius: 15)
-        applyCornerRadius(for: eveningButton, radius: 15)
+        applyCornerRadius(for: morningButton, radius: 18)
+        Shadow.shadowToView(view: morningView, radiusForPath: 18, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: dayButton, radius: 18)
+        applyCornerRadius(for: eveningButton, radius: 18)
         
         //duration
-        applyCornerRadius(for: time30Button, radius: 15)
-        applyCornerRadius(for: time45Button, radius: 15)
-        applyCornerRadius(for: time60Button, radius: 15)
-        Shadow.shadowToView(view: time60View, radiusForPath: 15, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: time30Button, radius: 18)
+        applyCornerRadius(for: time45Button, radius: 18)
+        applyCornerRadius(for: time60Button, radius: 18)
+        Shadow.shadowToView(view: time60View, radiusForPath: 18, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //save button
-        applyCornerRadius(for: saveButton, radius: 25)
-        Shadow.shadowToView(view: saveView, radiusForPath: 25, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
+        applyCornerRadius(for: saveButton, radius: 26)
+        Shadow.shadowToView(view: saveView, radiusForPath: 26, shadowRadius: 3, alpha: 0.1, top: 2, left: 0)
         
         //textviews
         textViewOne.layer.masksToBounds = true
         textViewOne.layer.cornerRadius = 10
         textViewOne.layer.borderWidth = 1
-        textViewOne.layer.borderColor = UIColor.lightGray.cgColor
+        textViewOne.layer.borderColor = UIColor.opaqueSeparator.cgColor
+        textViewOne.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
         
         textViewTwo.layer.masksToBounds = true
         textViewTwo.layer.cornerRadius = 10
         textViewTwo.layer.borderWidth = 1
-        textViewTwo.layer.borderColor = UIColor.lightGray.cgColor
+        textViewTwo.layer.borderColor = UIColor.opaqueSeparator.cgColor
+        textViewTwo.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
+        
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        nameTextField.attributedPlaceholder = NSAttributedString(string: "Имя", attributes: attributes)
+        ageTextField.attributedPlaceholder = NSAttributedString(string: "Возвраст", attributes: attributes)
+        cityTextField.attributedPlaceholder = NSAttributedString(string: "Город", attributes: attributes)
+        sexTextField.attributedPlaceholder = NSAttributedString(string: "Пол", attributes: attributes)
+        heightTextField.attributedPlaceholder = NSAttributedString(string: "Рост", attributes: attributes)
+        weightTextField.attributedPlaceholder = NSAttributedString(string: "Вес", attributes: attributes)
     }
     
     private func applyCornerRadius(for view: UIButton, radius: CGFloat) {

@@ -44,7 +44,7 @@ class AuthViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: shadowView, radiusForPath: 25, shadowRadius: 3, alpha: 0.2, top: 3, left: 0)
+        Shadow.shadowToView(view: shadowView, radiusForPath: 25, shadowRadius: 8, alpha: 0.1, top: 7, left: 0)
     }
    
 

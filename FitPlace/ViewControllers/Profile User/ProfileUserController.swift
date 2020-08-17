@@ -78,7 +78,7 @@ class ProfileUserController: UIViewController, UITableViewDelegate, UITableViewD
         case 3:
             otherCell.mainTitleLabel.text = "Уведомления о тренировках"
             otherCell.mainTitleLabel.font = regularFont
-            otherCell.additionalLabel.text = "-       30       +"
+            otherCell.additionalLabel.text = "-    30    +"
             otherCell.additionalLabel.textAlignment = .right
             otherCell.additionalLabel.isHidden = false
             return otherCell

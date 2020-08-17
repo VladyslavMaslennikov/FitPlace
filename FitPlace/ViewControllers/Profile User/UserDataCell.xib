@@ -32,7 +32,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виктор Артемьев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFh-M7-JGM">
-                        <rect key="frame" x="120" y="25" width="190" height="25"/>
+                        <rect key="frame" x="135" y="25" width="175" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="Iqh-vz-fmL"/>
                         </constraints>
@@ -41,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Москва, 32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-Oc-Yfe">
-                        <rect key="frame" x="120" y="55" width="190" height="25"/>
+                        <rect key="frame" x="135" y="55" width="175" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="rnU-Tf-3KA"/>
                         </constraints>
@@ -55,9 +55,9 @@
                     <constraint firstAttribute="trailing" secondItem="u1B-Oc-Yfe" secondAttribute="trailing" constant="10" id="2EG-7L-x0o"/>
                     <constraint firstItem="V0A-lP-CpX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="33O-bi-qwM"/>
                     <constraint firstItem="u1B-Oc-Yfe" firstAttribute="top" secondItem="lFh-M7-JGM" secondAttribute="bottom" constant="5" id="5oa-ZC-CKw"/>
-                    <constraint firstItem="u1B-Oc-Yfe" firstAttribute="leading" secondItem="V0A-lP-CpX" secondAttribute="trailing" constant="10" id="MZI-Qh-bix"/>
-                    <constraint firstItem="lFh-M7-JGM" firstAttribute="leading" secondItem="V0A-lP-CpX" secondAttribute="trailing" constant="10" id="Ovn-jU-yGZ"/>
-                    <constraint firstItem="V0A-lP-CpX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ud9-3h-v30"/>
+                    <constraint firstItem="u1B-Oc-Yfe" firstAttribute="leading" secondItem="V0A-lP-CpX" secondAttribute="trailing" constant="25" id="MZI-Qh-bix"/>
+                    <constraint firstItem="lFh-M7-JGM" firstAttribute="leading" secondItem="V0A-lP-CpX" secondAttribute="trailing" constant="25" id="Ovn-jU-yGZ"/>
+                    <constraint firstItem="V0A-lP-CpX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Ud9-3h-v30"/>
                     <constraint firstAttribute="trailing" secondItem="lFh-M7-JGM" secondAttribute="trailing" constant="10" id="g5v-AE-iWM"/>
                     <constraint firstItem="lFh-M7-JGM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="nhM-qT-IZb"/>
                     <constraint firstItem="V0A-lP-CpX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rrd-5H-KtS"/>

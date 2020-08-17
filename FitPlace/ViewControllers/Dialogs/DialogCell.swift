@@ -32,10 +32,10 @@ class DialogCell: UITableViewCell {
         shadowView.backgroundColor = .clear
         let layer = shadowView.layer
         layer.masksToBounds = false
-        layer.shadowColor = UIColor.darkGray.cgColor
+        layer.shadowColor = UIColor.lightGray.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 3)
-        layer.shadowRadius = 3
-        layer.shadowOpacity = 0.4
+        layer.shadowRadius = 5
+        layer.shadowOpacity = 0.5
         
         layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: bounds.size.width - 20, height: bounds.size.height - 20), cornerRadius: 20).cgPath
     }

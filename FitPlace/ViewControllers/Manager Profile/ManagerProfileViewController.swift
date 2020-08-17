@@ -12,6 +12,7 @@ class ManagerProfileViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var stackView: UIStackView!
     
     @IBOutlet weak var sendInvitationShadow: UIView!
     @IBOutlet weak var messageButtonShadow: UIView!
@@ -20,13 +21,14 @@ class ManagerProfileViewController: UIViewController, UITableViewDelegate, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .backgroundThemeColor
         setupTableView()
     }
     
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: sendInvitationShadow, radiusForPath: 25, shadowRadius: 3, alpha: 0.4, top: 2, left: 0)
-        Shadow.shadowToView(view: messageButtonShadow, radiusForPath: 25, shadowRadius: 3, alpha: 0.4, top: 2, left: 0)
+        Shadow.shadowToView2(view: sendInvitationShadow, radiusForPath: 20, shadowRadius: 5, alpha: 0.2, top: 4, left: 0)
+        Shadow.shadowToView2(view: messageButtonShadow, radiusForPath: 20, shadowRadius: 5, alpha: 0.2, top: 4, left: 0)
+        stackView.layoutMargins = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     }
     
 

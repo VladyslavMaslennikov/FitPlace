@@ -27,9 +27,10 @@ class VideoCardViewController: UIViewController {
         setUpCollectionView()
     }
     
+    
 
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: shadowViewButton, radiusForPath: 25, shadowRadius: 5, alpha: 0.4, top: 3, left: 0)
+        Shadow.shadowToView2(view: shadowViewButton, radiusForPath: 25, shadowRadius: 7, alpha: 1.0, top: 6, left: 0)
     }
     
 }

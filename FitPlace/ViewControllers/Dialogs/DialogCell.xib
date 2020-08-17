@@ -25,7 +25,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF9-7O-Pcp" userLabel="Shadow">
-                        <rect key="frame" x="10" y="10" width="300" height="80"/>
+                        <rect key="frame" x="10" y="5" width="300" height="80"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmO-9P-hEU">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
@@ -38,25 +38,25 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ольга Петровна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb8-ay-yEL">
-                                        <rect key="frame" x="70" y="10" width="160" height="17.5"/>
+                                        <rect key="frame" x="70" y="10" width="112" height="18"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:04" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPq-SP-FS0">
-                                        <rect key="frame" x="240" y="10" width="50" height="17.5"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <rect key="frame" x="182" y="10" width="103" height="18"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Замечательно, до встречи в субботу!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuW-Mw-OsV">
-                                        <rect key="frame" x="70" y="32.5" width="220" height="13.5"/>
+                                        <rect key="frame" x="70" y="33" width="220" height="13.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="KuW-Mw-OsV" firstAttribute="top" secondItem="jb8-ay-yEL" secondAttribute="bottom" constant="5" id="2LD-HY-L8n"/>
                                     <constraint firstItem="hPq-SP-FS0" firstAttribute="top" secondItem="HmO-9P-hEU" secondAttribute="top" constant="10" id="6YB-hk-5sc"/>
@@ -64,13 +64,13 @@
                                     <constraint firstItem="jb8-ay-yEL" firstAttribute="leading" secondItem="zdf-A8-Fhz" secondAttribute="trailing" constant="10" id="Ah5-7P-Dke"/>
                                     <constraint firstItem="jb8-ay-yEL" firstAttribute="top" secondItem="HmO-9P-hEU" secondAttribute="top" constant="10" id="BC8-e5-VBt"/>
                                     <constraint firstAttribute="trailing" secondItem="KuW-Mw-OsV" secondAttribute="trailing" constant="10" id="GUM-Kj-TJC"/>
-                                    <constraint firstItem="jb8-ay-yEL" firstAttribute="centerX" secondItem="HmO-9P-hEU" secondAttribute="centerX" id="Kfp-mM-jdN"/>
+                                    <constraint firstItem="jb8-ay-yEL" firstAttribute="centerX" secondItem="HmO-9P-hEU" secondAttribute="centerX" constant="-24" id="Kfp-mM-jdN"/>
                                     <constraint firstItem="zdf-A8-Fhz" firstAttribute="centerY" secondItem="HmO-9P-hEU" secondAttribute="centerY" id="Mwa-4P-Deb"/>
                                     <constraint firstItem="KuW-Mw-OsV" firstAttribute="height" relation="greaterThanOrEqual" secondItem="HmO-9P-hEU" secondAttribute="height" multiplier="0.16875" id="Nbv-HT-Aq2"/>
                                     <constraint firstItem="KuW-Mw-OsV" firstAttribute="leading" secondItem="zdf-A8-Fhz" secondAttribute="trailing" constant="10" id="au7-CS-qha"/>
-                                    <constraint firstItem="hPq-SP-FS0" firstAttribute="leading" secondItem="jb8-ay-yEL" secondAttribute="trailing" constant="10" id="dfg-3M-Srh"/>
+                                    <constraint firstItem="hPq-SP-FS0" firstAttribute="leading" secondItem="jb8-ay-yEL" secondAttribute="trailing" id="dfg-3M-Srh"/>
                                     <constraint firstItem="hPq-SP-FS0" firstAttribute="height" secondItem="jb8-ay-yEL" secondAttribute="height" id="in9-mA-p9D"/>
-                                    <constraint firstAttribute="trailing" secondItem="hPq-SP-FS0" secondAttribute="trailing" constant="10" id="kDH-US-eYE"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPq-SP-FS0" secondAttribute="trailing" constant="15" id="kDH-US-eYE"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -93,8 +93,8 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="GF9-7O-Pcp" secondAttribute="trailing" constant="10" id="Fyq-iV-wiV"/>
-                    <constraint firstAttribute="bottom" secondItem="GF9-7O-Pcp" secondAttribute="bottom" constant="10" id="YdC-uX-wgW"/>
-                    <constraint firstItem="GF9-7O-Pcp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="i93-sM-gxb"/>
+                    <constraint firstAttribute="bottom" secondItem="GF9-7O-Pcp" secondAttribute="bottom" constant="5" id="YdC-uX-wgW"/>
+                    <constraint firstItem="GF9-7O-Pcp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="i93-sM-gxb"/>
                     <constraint firstItem="GF9-7O-Pcp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jvv-oH-Ap3"/>
                 </constraints>
             </tableViewCellContentView>

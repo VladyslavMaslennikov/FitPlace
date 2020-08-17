@@ -19,8 +19,8 @@ class VerifyViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        Shadow.shadowToView(view: cancelShadowView, radiusForPath: 25, shadowRadius: 3, alpha: 0.1, top: 3, left: 0)
-        Shadow.shadowToView(view: okShadowView, radiusForPath: 25, shadowRadius: 3, alpha: 0.1, top: 3, left: 0)
+        Shadow.shadowToView(view: cancelShadowView, radiusForPath: 25, shadowRadius: 7, alpha: 0.05, top: 6, left: 0)
+        Shadow.shadowToView(view: okShadowView, radiusForPath: 25, shadowRadius: 7, alpha: 0.05, top: 6, left: 0)
     }
     
 }
